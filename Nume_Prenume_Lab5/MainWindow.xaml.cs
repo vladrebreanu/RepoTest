@@ -56,11 +56,7 @@ namespace Nume_Prenume_Lab5
 
    
 
-        private void txtSubscriber_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            lstPhonesLoad();
-        }
-
+      
         private void grdMain_Loaded(object sender, RoutedEventArgs e)
         {
             lstPhonesLoad();
@@ -178,7 +174,7 @@ namespace Nume_Prenume_Lab5
             else
             if (action == ActionState.Edit)
             {
-                try
+                try           
                 {
                     DataRow editRow = phoneNumbersDataSet.PhoneNumbers.Rows[lstPhones.SelectedIndex];
                     editRow.BeginEdit();
